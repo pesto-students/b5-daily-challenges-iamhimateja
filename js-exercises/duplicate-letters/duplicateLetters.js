@@ -1,13 +1,13 @@
 function duplicateLetters(string) {
-  const charecterCounterObject = {};
+  const characterCounterObject = {};
   for (const char of string) {
-    if (charecterCounterObject[char]) {
-      charecterCounterObject[char] += 1;
+    if (characterCounterObject[char]) {
+      characterCounterObject[char] += 1;
     } else {
-      charecterCounterObject[char] = 1;
+      characterCounterObject[char] = 1;
     }
   }
-  const max = Math.max(...Object.values(charecterCounterObject));
+  const max = Math.max(...Object.values(characterCounterObject));
   return max === 1 ? false : max;
 }
 
